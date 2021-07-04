@@ -1,0 +1,498 @@
+.container{
+    margin: 0%;
+    background: #E7E7E7;
+    width: 100%;
+    height: 965px;
+    border-radius: 20px 20px 0px 0px / 20px 20px 0px 0px;
+}
+.top{
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    width: 320px;
+    height: 150px;
+    position: relative; top: 1.5%;
+    background: #C2DAFF;
+    background-image:url("assets/top.png");
+    background-position: -19px -34px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px / 20px 20px 0px 0px;
+    text-align: left;
+    }
+.hamburgerB{
+    margin: 0%;
+    background-image:url("assets/hamburger.png");
+    background-size: cover;
+    width: 19px;
+    height: 19px;
+    position: relative; left: 17px; top: 42px;
+    text-align: left; 
+    border-radius: 0px 0px 0px 0px/ 0px 0px 0px 0px;
+    visibility: visible; 
+}
+.widgetB{
+    margin: 0%;
+    background-image:url("assets/widget.png");
+    background-size: cover;
+    width: 19px;
+    height: 19px;
+    position: relative; left: 283px; top: 23px;
+    text-align: right;  
+    border-radius: 0px 0px 0px 0px/ 0px 0px 0px 0px;
+    visibility: visible; 
+
+}
+
+.main{
+    margin: 3.5%;
+    background: rgb(255, 255, 255);
+    position: relative; top: 1.5%;
+    height: 308px;
+    text-align: left;  
+    border-radius: 10px 10px 10px 10px /10px 10px 10px 10px;
+}
+.message{
+    margin: 3.5%;
+    background: linear-gradient(45deg, #dfecff, #bdd7ff );
+    position: relative; 
+    top: -155px; left: 4px;
+    height: 60px;
+    width:290px;
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+    line-height: 18px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px 10px 10px 10px /10px 10px 10px 10px;
+}
+.Iweek{
+    margin: 3.5%;
+    background-image:url("assets/iweek.png");
+    background-size: cover;
+    position: relative; 
+    top: -130px; left: 4px;
+    height: 27px;
+    width:290px;
+}
+.IweekT{
+    margin: 3.5%;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    position: relative; 
+    top: -190px; left: 4px;
+    height: 9px;
+    width:290px;
+}
+.IWT{
+    font-size: 8px;
+    white-space: pre;
+}
+.TB{
+    margin: 3.5%;
+    background-color: rgb(255, 158, 158);
+    background-size: cover;
+    position: relative; 
+    top: -155px; left: 4px;
+    height: 14px;
+    width:290px;
+    visibility: hidden;
+}
+#TT{
+    font-size: 13px;
+    white-space: pre;
+    font-weight: bold;
+    visibility: visible;
+}
+.TI{
+    margin: 3.5%;
+    background-image:url("assets/TI.png");
+    background-size: cover;
+    position: relative; 
+    top: 20px; left: 10px;
+    height: 14px;
+    width:14px;
+}
+.title{
+    margin: 3.5%;
+    background-color: rgb(255, 158, 158);
+    background-size: cover;
+    position: relative; 
+    top: -15px; left: 26px;
+    height: 14px;
+    width:290px;
+    visibility: hidden;
+}
+.titleT{
+    font-size: 19px;
+    white-space: pre;
+    font-weight: bold;
+    visibility: visible;
+}
+.cloud{
+    margin: 3.5%;
+    background-image:url("assets/cloud.png");
+    background-size: cover;
+    position: relative; 
+    top: -70px; left: 10px;
+    height: 45px;
+    width:42px;  
+}
+/* 큰 템플쳐 */
+.BT{
+    margin: 3.5%;
+    background: rgb(255, 170, 170);
+    position: relative; 
+    top: -163px; left: 57px;
+    height: 37px;
+    width:55px;   
+    visibility: hidden;
+}
+.BTt{
+    font-size: 45px;
+    white-space: pre;
+    visibility: visible;
+}
+/* 메인 좌측 비봉면 밑에 작은 글씨 정보 */
+.ST{
+    margin: 3.5%;
+    background: rgb(255, 198, 198);
+    position: relative; 
+    top: -13px; left: 12px;
+    height: 13px;
+    width:108px;
+    visibility: hidden;
+}
+.STt{
+    font-size: 10px;
+    white-space: pre;
+    visibility: visible;
+}
+/* 메인 우측 작은 글씨 정보 */
+.RST{
+    margin: 3.5%;
+    background: rgb(255, 198, 198);
+    position: relative; 
+    top: -13px; left: 235px;
+    height: 45px;
+    width:54px;
+    visibility: hidden;
+}
+.RSTt{
+    font-size: 10px;
+    white-space: pre;
+    visibility: visible;
+    text-align: right;
+    line-height: 15px;
+}
+.mcircle1{
+    margin: 0%;
+    background: rgb(255, 255, 255);
+    height: 23px;
+    position: relative; bottom: -300px;
+    text-align: left;  
+    border-radius: 0px 0px 10px 10px /0px 0px 10px 10px;
+}
+#mcircleB{
+    margin: 0%; 
+    background: rgb(255, 113, 113) ;
+    width: 57px; 
+    height: 8px;
+    position: relative; bottom: -300px;
+    position: absolute;
+    text-align: center; left: 135px;
+    top: 285px;
+    visibility: hidden;
+    }
+    #mcircle1{
+        margin: 0;
+        background: #65B0FF;
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        text-align: left; 
+        top: 0px;
+        border-radius: 50%;
+        visibility: visible;
+    }
+    #mcircle2{
+        margin: 0;
+        background: #C4DDFF;
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        text-align: left; left: 17px;
+        top: 0px;
+        border-radius: 50%;
+        visibility: visible;
+    }
+    #mcircle3{
+        margin: 0;
+        background: #C4DDFF;
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        text-align: right; right: 15px;
+        top: 0px;
+        border-radius: 50%;  
+        visibility: visible;
+    }   
+    #plus{
+        margin: 0;
+        background-image:url("assets/plus.png");
+        background-size: cover;
+        width: 7px;
+        height: 8px;
+        position: absolute;
+        text-align: right; right: 0px;
+        top: -1px;
+        visibility: visible;
+    }
+.dust{
+    margin: 3.5%;
+    background: tomato;
+    height: 93px;
+    position: relative; top: 1.5%;
+    top: -477px;
+    text-align: left;  
+    border-radius: 10px 10px 10px 10px /10px 10px 10px 10px;
+}
+.week{
+    margin: 3.5%;
+    background: rgb(255, 255, 255);
+    position: relative; top: 1.5%;
+    top: -475px;
+    height: 323px;
+    text-align: left;  
+    border-radius: 10px 10px 10px 10px /10px 10px 10px 10px;
+}
+/* 주간 날씨 창 ( 아이콘 ) */
+.WIC{
+    margin: 3.5%;
+    background-image:url("assets/WIC.png");
+    background-size: cover;
+    position: relative; 
+    top: 16px; left: 145px;
+    height: 225px;
+    width: 57px;
+}
+.water{
+    margin: 3.5%;
+    background-image:url("assets/water.png");
+    background-size: cover;
+    position: relative; 
+    top: -218px; left: 85px;
+    height: 225px;
+    width: 30px;
+}
+.weekTL{
+    margin: 3.5%;
+    background: chartreuse;
+    position: absolute; 
+    bottom: 85px; left: 5px;
+    height: 225px;
+    width: 32px;
+    visibility: hidden;
+}
+#weekTLt{
+    font-size: 12px;
+    white-space: pre;
+    line-height: 33px;
+    visibility: visible;
+}
+.weekTR{
+    margin: 3.5%;
+    background: chartreuse;
+    position: absolute; 
+    bottom: 85px; right: 5px;
+    text-align: right;
+    height: 225px;
+    width: 50px;
+    visibility: hidden;
+}
+#weekTRt{
+    font-size: 12px;
+    white-space: pre;
+    line-height: 33px;
+    visibility: visible;
+}
+.weekTS{
+    margin: 3.5%;
+    background: chartreuse;
+    position: absolute; 
+    bottom: 83px; left: 115px;
+    height: 220px;
+    width: 7px;
+    visibility: hidden;
+}
+#weekTSt{
+    font-size: 5px;
+    white-space: pre;
+    line-height: 33px;
+    visibility: visible;
+}
+.Bbox{
+    margin: 3.5%;
+    background-image: url("assets/Bbox.png");
+    background-size: cover;
+    position: relative; 
+    top: -234px; left: -32px;
+    height: 90px;
+    width: 330px;
+    visibility: visible;
+}
+.dcircle1{
+    margin: 0%;
+    background: rgb(255, 255, 255);
+    height: 23px;
+    position: relative;
+    top: 70px;
+    text-align: left;  
+    border-radius: 0px 0px 10px 10px /0px 0px 10px 10px;
+}
+/* 미세먼지 동그라미바 큰컨테이너/bottom컨테이너/ 동그라미(3개)*/
+#dcircleB{
+    margin: 0%; 
+    background: tomato ;
+    width: 41px; 
+    height: 7px;
+    position: absolute;
+    text-align: center; left: 140px;
+    top: 7.6px;
+    visibility: hidden;
+    }
+#circle1{
+    margin: 0;
+    background: #65B0FF;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    text-align: left; 
+    top: 0px;
+    border-radius: 50%;
+    visibility: visible;
+}
+#circle2{
+    margin: 0;
+    background: #C4DDFF;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    text-align: left; left: 17px;
+    top: 0px;
+    border-radius: 50%;
+    visibility: visible;
+}
+#circle3{
+    margin: 0;
+    background: #C4DDFF;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    text-align: right; right: 0px;
+    top: 0px;
+    border-radius: 50%;  
+    visibility: visible;
+}
+#dcenter{
+    color: #6C6C6C;
+    font-size: 1px;
+    visibility: visible;
+    position: absolute;
+    text-align: right; right: 15px; bottom: 4.5px;
+}
+/* 미세먼지 top컨테이너 */
+.dcircleTL{
+    margin: 0%;
+    background: rgb(255, 255, 255);
+    width: 167px;
+    height: 70px;
+    position: relative;
+    top: -23px;
+    text-align: left;  
+    border-radius: 10px 0px 0px 0px/ 10px 0px 0px 0px;
+    visibility: visible;
+}
+.goodtext1{
+    color: #000000;
+    font-size: 10px;
+    visibility: visible;
+    position: absolute;
+    text-align: left; left: 106px; bottom: 28px;
+}
+.goodtext2{
+    color: #4d4d4d;
+    font-size: 5px;
+    visibility: visible;
+    position: absolute;
+    text-align: left; left: 106px; bottom: -8px;
+    line-height: 14px;
+}
+.badtext1{
+    color: #000000;
+    font-size: 10px;
+    visibility: visible;
+    position: absolute;
+    text-align: left; left: 82px; bottom: 28px;
+}
+.badtext2{
+    color: #4d4d4d;
+    font-size: 5px;
+    visibility: visible;
+    position: absolute;
+    text-align: left; left: 82px; bottom: -8px;
+    line-height: 14px;
+}
+#dcircleTR{
+    margin: 0%;
+    background: rgb(255, 255, 255);
+    width: 160px;
+    height: 70px;
+    top: 0px;
+    position: absolute;
+    text-align: right; right: 0px;
+    border-radius: 0px 10px 0px 0px/ 0px 10px 0px 0px;
+    visibility: visible;
+}
+/* 미세먼지 top컨테이너 자식 */
+.dcircleTLl1{
+    margin: 0%;
+    background: rgb(255, 222, 222);
+    width: 90px;
+    height: 71px;
+    position: relative;
+    text-align: left;  
+    border-radius: 10px 0px 0px 0px/ 10px 0px 0px 0px;
+    visibility: hidden; 
+}
+.goodI{
+    margin: 0;
+    width: 70px;
+    height: 64px;
+    background-image:url("assets/good.png");
+    background-size: cover;
+    position: relative;
+    top: 12px;
+    text-align: right; left: 32px;
+    visibility: visible; 
+}
+.dcircleTRr1{
+    margin: 0%;
+    background: rgb(0, 0, 0);
+    width: 125px;
+    height: 71px;
+    position: relative;
+    text-align: right; 
+    border-radius: 0px 0px 0px 0px/ 0px 0px 0px 0px;
+    visibility: hidden; 
+}
+.badI{
+    margin: 0;
+    background-image:url("assets/bad.png");
+    background-size: cover;
+    width: 70px;
+    height: 64px;
+    position: relative;
+    top: 12px;
+    text-align: right; left: 9px;
+    visibility: visible; 
+}
