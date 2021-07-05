@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript_study</title>
+</head>
+<body>
+    <!-- 스크립트 사용자와 소통 alert -->
+    <input type="button" value="alert" onclick="alertfnc();"/>
+    <script>
+        function alertfnc(){
+        alert(1);
+        alert(2);
+        alert(3);
+        }
+    </script>
+    <!-- 스크립트 사용자와 소통 confirm (컨펌)확인/취소 -->
+    <input type="button" value="confirm" onclick="func_confirm()"/>
+    <script>
+        function func_confirm(){
+            if(confirm ('ok?')){
+                alert('ok');
+            }
+            else{
+                alert('cancel');
+            }
+        }
+    </script>
+    
+    <!-- prompt --id 입력값 확인> -->
+    <input type="button" value="id" onclick="func_prompt()"/>
+    <script>
+        function func_prompt(){
+            if (prompt ('id?') === 'zion'){
+                alert('welcome');
+            }else{
+                alert('fail');
+            }
+        }
+    </script>
+    
+    <!-- Location 객체  -->
+    <!-- 현재 윈도우의 URL 알아내기  -->
+    <!-- <script> -->
+        <!-- // console.log(location.toString(), location.href);
+        // alert (location);
+         // console.log(location.protocol, location.host, location.port, location.pathname, location.search, location.hash)
+        
+        // // 이동 다른 url
+        // location.href = 'http://egoing.net';
+       
+        // // 아래는 현재 문서를 리로드하는 간편한 방법을 제공한다.
+        // location.reload(); -->
+    <!-- </script> -->
+    
+    <!-- Navigator 객체 -->
+    <!-- 창 제어 -->
+
+</body>
+</html>
