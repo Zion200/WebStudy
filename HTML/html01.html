@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html01</title>
+</head>
+
+<body>
+    <!-- p,br tag study -->
+    <p>하이퍼텍스트 마크업 언어(HyperText Markup Language, 
+    HTML, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)는 웹 페이지를 위한 지배적인 마크업 언어다.
+     또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 
+     인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. <br>그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. </p>
+     <!-- br를 p태그 만큼의 간격을 주고 싶으면 두번 넣으면 됨 -->
+     <!-- br보다는 p가 단락 나누기에 유용 ( 정보로 나누기 때문 ) -->
+     <p>HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. <br> <br> HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 
+     자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. 
+     HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.</p>
+
+     <!-- img tag study -->
+     <!-- img tag는 닫을 필요 없음! -->
+     <!-- img 파일이 깨졌을때 "산이미지"라고 뜸! -->
+     <!-- img 파일에 마우스 놓으면 title="산 이미지"뜸! -->
+     <img src="assets/girls.jpg" width="600em" alt="산 이미지" title="산 이미지">
+     
+     <!-- 표 - table study -->
+     <table border="2">
+     <tr>
+         <td>이름</td> <td>성별</td> <td>주소</td>
+     </tr>   
+     <tr>
+        <td>최진혁</td> <td>남자</td> <td>청주</td>
+    </tr>
+     <tr>
+         <td>정지온</td> <td>여자</td> <td>서울</td>
+     </tr>
+    </table>
+
+    <!-- 입력양식 - form study -->
+    <form action="https://www.naver.com">
+        <p>아이디: <input type="text" name="id"></p>
+        <p>비밀번호: <input type="password" name="ps"></p>
+        <p>주소: <input type="address" name="ad"></p>
+        <input type="submit">
+    </form>
+    <br>
+    <!-- 입력양식 - form text/textarea study -->
+    <form>
+        <input type="text" name="text" value="텍스트를 입력하세요.">
+        <p>textarea <textarea name="textarea" cols="30" rows="2">입력하세요</textarea></p>
+    </form>  
+     <!-- 입력양식 - form dropdown list study -->
+     <form action="http://localhost/color.php">
+         <h1> 선택 (다중선택) </h1>
+         <select name="color" multiple>
+             <option value="black">검정색</option>
+             <option value="red">빨강색</option>
+             <option value="blue">파랑색</option>
+         </select>
+         <input type="submit">
+     </form>
+
+     <!-- 버튼 button study -->
+     <!-- submit과 다르게 눌리기만함 -->
+     <p><input type="text"></p>
+     <input type="submit" value="전송">
+     <input type="button" value="버튼" onclick="alert('hello world')">
+     <input type="reset">
+    
+     <!-- hidden field study -->
+     <!-- 서버 전송하는데 UI가 필요없는 경우 -->
+     <br><form action="http://localhost/hidden.php">
+        id <input type="text" name="id">
+        <input type="submit" value="전송">
+        <input type="hidden" name="hide" value="egoing">
+    </form>
+    
+    <!-- lable study -->
+    <form action="http://localhost/lable.php">
+        <p>
+            <label for="id_text">text </label><input id="id_text" type="text" name="id" value="value">
+        </p>
+        <p>
+            <label for="passworld">password </label><input id="passworld" type="password" name="pa" value="psssword">
+        </p>
+        <p>
+           <label> textarea:
+                <textarea name="textarea" cols="30" rows="2">default value</textarea>
+            </label>     
+        </p>
+        <p>
+        <label>
+        <input type="checkbox" name="color" value="red"> 붉은색
+        </label>
+        </p>
+    </form>
+
+    <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="profile">
+        <input type="submit">
+    </form>
+
+    <form action="">
+        <input type="text" name="id" placeholder="입력하세요">
+    </form>
+</body>
+</html>
