@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript02</title>
+</head>
+<!-- 제어 대상을 찾기 -->
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+   <!-- 전체 -->
+    <!-- <script>
+        var lis = document.getElementsByTagName('li');
+        for(var i=0; i < lis.length; i++){
+            lis[i].style.color='red';   
+        }
+    </script> -->
+    <!-- 한가지 같은 요소들 중 -->
+    <script>
+        var ul = document.getElementsByTagName('ul')[0];
+        var lis = ul.getElementsByTagName('li');
+        for(var i=0; lis.length; i++){
+            lis[i].style.color='red';   
+        }
+    </script>
+    <!-- document.getElementsByClassName -->
+    <ul>
+        <li>HTML</li>
+        <li class="active">CSS</li>
+        <li class="active">JavaScript</li>
+    </ul>
+    <script>
+        var lis = document.getElementsByClassName('active');
+        for(var i=0; i < lis.length; i++){
+            lis[i].style.color='red';   
+        }
+    </script>
+    <!-- document.getElementById id에 쓸 수 있고 가장많이 사용 s 아닌 한개!  -->
+    <!-- id 는 문서에서 1개이기때문에 1개의 태그에 해당하는 객체만 ! 배열이 아님! 바로 스타일 적용가능 -->
+    <ul>
+        <li>HTML</li>
+        <li id="active">CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <script>
+        var li = document.getElementById('active');
+        li.style.color='red';
+    </script>
+    <!-- document.querySelector 선택자를 이용하여 꾸미는  - 리턴? 커리 셀렉터 직접적 -->
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li class="active">CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    
+    <script>
+        var li = document.querySelector('li');
+        li.style.color='red';
+        var li = document.querySelector('.active');
+        li.style.color='blue';
+    </script>
+    <!-- 커리 셀렉터 All -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li class="active">CSS</li>
+        <li>JavaScript</li>
+    </ol>
+     
+    <script>
+        var lis = document.querySelectorAll('li');
+        for(var name in lis){
+            lis[name].style.color = 'blue';
+        }
+    </script>
+    <!-- jQuery 쉽게 제어할 수 있는  --> 
+    <!-- jQuery 사이트에서 복사, 다운로드해서 사용 -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    jQuery( document ).ready(function( $ ) {
+      $('body').prepend('<h1>Hello world</h1>');
+    });
+    </script>
+    <!-- 제어 대상을 찾기 (jQuery)
+    jQuery는 항상 $로 시작함 ( jQuery 함수라고 불림) $(태그).css(작업내용:'color','red' 등); 달러다음에 괄호, css 선택자 ( 작업하려고 하는요소) -->
+    <!-- HTMLElement 객체 이름을 알 수 있다. -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li id="active">JavaScript</li>
+    </ul>
+    <script>
+        var li = document.getElementById('active');
+        console.log(li.constructor.name);
+        var lis = document.getElementsByTagName('li');
+        console.log(lis.constructor.name);
+    </script>
+    <!-- HTMLELement2 -->
+    <a id="anchor" href="http://opentutorials.org">opentutorials</a>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li id="list">JavaScript</li>
+    </ul>
+    <input type="button" id="button" value="button" />
+    <script>
+        var target = document.getElementById('list');
+        console.log(target.constructor.name);
+    
+        var target = document.getElementById('anchor');
+        console.log(target.constructor.name);
+    
+        var target = document.getElementById('button');
+        console.log(target.constructor.name);
+    
+    </script>
+    <!-- HTMLCollection -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li id="active">JavaScript</li>
+    </ul>
+    <script>
+    console.group('before');
+    var lis = document.getElementsByTagName('li');
+    for(var i = 0; i < lis.length; i++){
+        console.log(lis[i]);
+    }
+    console.groupEnd();
+    console.group('after');
+    lis[1].parentNode.removeChild(lis[1]);
+    for(var i = 0; i < lis.length; i++){
+        console.log(lis[i]);
+    }
+    console.groupEnd();
+    </script>
+</body>
+</html>
